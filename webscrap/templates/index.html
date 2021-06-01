@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{ newerror }}
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+
+      <p>Enter Valid Wikipedia URL:</p>
+      <input type="text" name="pclass">
+      <br>
+        <input type="submit" value='Go'>
+    </form>
+</body>
+</html>
